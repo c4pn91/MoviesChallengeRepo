@@ -1,9 +1,11 @@
-package com.example.movieschallenge.ui;
+package com.example.movieschallenge.ui.main;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.movieschallenge.R;
+import com.example.movieschallenge.ui.getMovies.GetMoviesActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -11,6 +13,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Intent i = new Intent(this, GetMoviesActivity.class);
+        startActivity(i);
+        finish();
     }
 
     @Override

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.movieDetails.MovieDetailsActivity">
+
+    <ImageView
+        android:id="@+id/image_view_poster_movie_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/avengers"
+        android:scaleType="centerCrop"
+        />
+
+    <ImageButton
+        android:id="@+id/image_button_goback_movie_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_arrow_back_black_36dp"
+        android:background="@android:color/transparent"
+        android:elevation="4dp"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/gradient"
+        android:paddingTop="20dp"
+        android:paddingStart="12sp"
+        android:paddingEnd="12dp"
+        android:gravity="bottom"
+        android:paddingBottom="24dp">
+
+        <TextView
+            android:id="@+id/text_view_title_movie_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AVENGERS INFINTY WARS"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/text_view_release_date_movie_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@android:color/darker_gray"
+            android:text="12-12-2010"
+            android:textStyle="italic"
+            android:layout_below="@+id/text_view_title_movie_details"
+            />
+
+        <TextView
+            android:id="@+id/text_view_overview_movie_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textStyle="normal"
+            android:maxLines="12"
+            android:layout_marginBottom="12dp"
+            android:text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
+            android:layout_below="@+id/text_view_release_date_movie_details"
+            />
+
+        <RatingBar
+            android:id="@+id/ratingbar_average_movie_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_overview_movie_details"
+            android:numStars="10"
+            android:rating="9"
+            style="?android:attr/ratingBarStyleSmall" />
+
+        <TextView
+            android:id="@+id/text_view_vote_count_movie_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@id/ratingbar_average_movie_details"
+            />
+
+        <ToggleButton
+            android:id="@+id/toogle_button_movie_details"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/text_view_overview_movie_details"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="24dp"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
